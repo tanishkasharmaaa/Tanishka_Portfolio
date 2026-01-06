@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 // import WhatsAppButton from "./components/WhatsAppButton";
+// ;
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";

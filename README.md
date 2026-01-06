@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio Website
+# 🌐 TANISHKA PORTFOLIO
 
 A modern, animated personal portfolio website showcasing my skills, projects, and experience. Built with a strong focus on UI/UX, smooth animations, and responsiveness across all devices.
 

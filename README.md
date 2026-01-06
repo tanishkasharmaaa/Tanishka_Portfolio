@@ -1,144 +1,123 @@
-# Premium Portfolio Website
+# 🌐 Personal Portfolio Website
 
-A modern, animated personal portfolio website built with React, TypeScript, and Framer Motion.
+A modern, animated personal portfolio website showcasing my skills, projects, and experience. Built with a strong focus on UI/UX, smooth animations, and responsiveness across all devices.
 
-## Features
+---
 
-- Animated hero section with gradient effects
-- Glassmorphism design elements
-- Smooth scroll animations
-- Responsive navbar with mobile menu
-- Projects showcase with hover effects
-- Interactive timeline for experience
-- Contact form with EmailJS integration
-- WhatsApp floating button
-- Scroll-to-top button
-- SEO optimized
-- Fully responsive design
+## ✨ Features
 
-## Tech Stack
+* Animated hero section with gradient effects
+* Glassmorphism-inspired design elements
+* Smooth scroll and section reveal animations
+* Responsive navbar with mobile menu
+* Projects showcase with hover interactions
+* Interactive experience & education timeline
+* Contact & feedback form with EmailJS integration
+* WhatsApp floating contact button
+* Scroll-to-top utility button
+* SEO-friendly structure
+* Fully responsive design
 
-- React 18
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- EmailJS
-- Lucide Icons
-- Vite
+---
 
-## Setup Instructions
+## 🛠 Tech Stack
 
-### 1. Install Dependencies
+* **React 18**
+* **TypeScript**
+* **Vite**
+* **Tailwind CSS**
+* **Framer Motion**
+* **EmailJS**
+* **Lucide Icons**
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Node.js
+* npm
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/tanishkasharmaaa/Tanishka_Portfolio
+
+# Navigate to project directory
+cd Tanishka_Portfolio
+
+# Install dependencies
 npm install
-```
 
-### 2. Configure EmailJS
-
-To enable the contact form:
-
-1. Create a free account at [EmailJS](https://www.emailjs.com/)
-2. Create an email service and template
-3. Get your credentials:
-   - Service ID
-   - Template ID
-   - Public Key
-
-4. Update the EmailJS configuration in `src/sections/Contact.tsx`:
-
-```typescript
-await emailjs.send(
-  'YOUR_SERVICE_ID',      // Replace with your Service ID
-  'YOUR_TEMPLATE_ID',     // Replace with your Template ID
-  {
-    from_name: formData.name,
-    from_email: formData.email,
-    message: formData.message,
-    to_name: 'Your Name',
-  },
-  'YOUR_PUBLIC_KEY'       // Replace with your Public Key
-);
-```
-
-### 3. Customize Content
-
-Update the following files with your information:
-
-- `src/sections/Hero.tsx` - Name, title, bio, social links
-- `src/sections/About.tsx` - About text and skills
-- `src/sections/Projects.tsx` - Your projects
-- `src/sections/Experience.tsx` - Work experience and achievements
-- `src/sections/Contact.tsx` - Contact information
-- `src/components/WhatsAppButton.tsx` - WhatsApp number
-- `index.html` - SEO meta tags
-
-### 4. Run Development Server
-
-```bash
+# Start development server
 npm run dev
 ```
 
-### 5. Build for Production
+---
+
+## 🔐 Environment Variables
+
+To enable the contact/feedback form using EmailJS, create a `.env` file in the root directory:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+⚠️ Restart the server after adding environment variables.
+
+---
+
+## 📂 Project Structure
+
+```txt
+src/
+├── components/        # Reusable UI components
+├── sections/         # Page sections (Hero, About, Projects, Experience, Contact)
+├── hooks/             
+├── utils/            # Animation & helper utilities
+├── App.tsx           # Main app component
+├── main.tsx          # Entry point
+└── index.css         # Global styles
+```
+
+---
+
+## 🎨 Customization
+
+* **Content:** Update data inside `sections/` files
+* **Colors:** Modify Tailwind gradient classes
+* **Fonts:** Change Google Font in `index.html`
+* **Images:** Replace project images inside the Projects section
+
+---
+
+## 🌍 Deployment
+
+This portfolio can be deployed easily on platforms like:
+
+* Vercel
+* Netlify
+* Render
 
 ```bash
 npm run build
 ```
 
-## Deployment on Vercel
+---
 
-1. Push your code to GitHub
-2. Go to [Vercel](https://vercel.com/)
-3. Import your repository
-4. Vercel will automatically detect it's a Vite project
-5. Click "Deploy"
+## 👨‍💻 Author
 
-No environment variables needed unless you add custom integrations.
+**Tanishka Sharma**
+Full-Stack Developer | MERN | AI & SaaS Enthusiast
 
-## Folder Structure
+---
 
-```
-src/
-├── components/        # Reusable UI components
-│   ├── Button.tsx
-│   ├── GlassCard.tsx
-│   ├── Navbar.tsx
-│   ├── SectionTitle.tsx
-│   ├── ScrollToTop.tsx
-│   └── WhatsAppButton.tsx
-├── sections/         # Main page sections
-│   ├── Hero.tsx
-│   ├── About.tsx
-│   ├── Projects.tsx
-│   ├── Experience.tsx
-│   └── Contact.tsx
-├── types/           # TypeScript types
-│   └── index.ts
-├── utils/           # Utility functions
-│   ├── animations.ts
-│   └── smoothScroll.ts
-├── App.tsx          # Main app component
-├── main.tsx         # Entry point
-└── index.css        # Global styles
-```
+## 📄 License
 
-## Customization Tips
+MIT License — free to use and customize for your own portfolio.
 
-### Colors
-The portfolio uses a blue/purple gradient theme. To change colors, update:
-- Gradient classes in components (`from-blue-600 to-purple-600`)
-- Tailwind config if needed
-
-### Fonts
-The portfolio uses Inter font from Google Fonts. To change:
-- Update the font link in `index.html`
-- Modify the font-family in the style tag
-
-### Images
-- Use high-quality images from [Pexels](https://www.pexels.com/)
-- Update project images in `src/sections/Projects.tsx`
-- Recommended size: 800x600px
-
-## License
-
-MIT License - feel free to use for your own portfolio!
+⭐ If you like this project, don’t forget to star the repository!

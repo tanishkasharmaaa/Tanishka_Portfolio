@@ -6,7 +6,29 @@ import { Project } from '../types';
 
 const projects: Project[] = [
   {
-    id: 1,
+   
+  id: 1,
+  title: "SmartTry",
+  description:
+    "SmartTry is an AI-powered ecommerce platform with a smart shopping assistant that helps users discover products, get recommendations, and track orders using natural language. It combines Google Gemini AI with rule-based intelligence for accurate, real-time responses.",
+  image:
+    "/assets/smartTry.png", // replace with actual screenshot
+  techStack: [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Chakra UI",
+    "WebSockets",
+    "Google Gemini AI"
+  ],
+  liveUrl: "https://smart-try.vercel.app",
+  githubUrl: "https://github.com/tanishkasharmaaa/SmartTry"
+ 
+  },
+
+  {
+    id: 2,
     title: "AskAI – AI Powered Query App",
     description:
       "An AI-powered SaaS-style application that helps users ask questions and get intelligent responses using Google Gemini. Includes a clean UI and real-time responses.",
@@ -24,7 +46,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/tanishkasharmaaa/AskAI"
   },
   {
-    id: 2,
+    id: 3,
     title: "Nordstrom Rack Clone",
     description:
       "A full-stack e-commerce clone of Nordstrom Rack featuring product listings, cart functionality, authentication, and a responsive UI.",
@@ -41,7 +63,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/tanishkasharmaaa/Nord_Storm"
   },
   {
-    id: 3,
+    id: 4,
     title: "Myntra Clone",
     description:
       "A frontend-focused clone of Myntra showcasing product browsing, filtering, and a modern shopping UI inspired by the original platform.",
@@ -58,7 +80,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/tanishkasharmaaa/Myntra"
   },
   {
-    id: 4,
+    id: 5,
     title: "Urban Company Clone",
     description:
       "A responsive clone of Urban Company focusing on service listings, category-based navigation, and a clean, user-friendly interface.",
@@ -69,7 +91,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/tanishkasharmaaa/Urban_Company"
   },
   {
-    id: 5,
+    id: 6,
     title: "Resume & Portfolio Generator",
     description:
       "A frontend-only resume and portfolio generator that allows users to create resumes, generate portfolio websites, and download deploy-ready files without any backend.",

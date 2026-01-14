@@ -12,7 +12,7 @@ const projects: Project[] = [
   description:
     "SmartTry is an AI-powered ecommerce platform with a smart shopping assistant that helps users discover products, get recommendations, and track orders using natural language. It combines Google Gemini AI with rule-based intelligence for accurate, real-time responses.",
   image:
-    "https://github.com/tanishkasharmaaa/Tanishka_Portfolio/blob/main/assets/smartTry.png", // replace with actual screenshot
+    "https://github.com/tanishkasharmaaa/Tanishka_Portfolio/blob/main/assets/smartTry.png?raw=true", // replace with actual screenshot
   techStack: [
     "React",
     "Node.js",
